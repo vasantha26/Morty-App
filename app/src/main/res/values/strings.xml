@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ricky &amp; Morty App</string>
+    <string name="species">SPECIES</string>
+    <string name="type">TYPE</string>
+    <string name="human">Human</string>
+    <string name="gender">GENDER</string>
+    <string name="status">STATUS</string>
+    <string name="favorites">favorites</string>
+    <string name="favorite">Favorite</string>
+
+    <string name="None">None</string>
+    <string name="Remove">Remove from Favorites</string>
+    <string name="Add">Add to Favorites</string>
+</resources>

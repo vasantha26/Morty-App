@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview1"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_height="48dp"
+        app:drawableStartCompat="@drawable/baseline_arrow_back_24" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:id="@+id/character_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/baseline_person_24" />
+
+        <TextView
+            android:id="@+id/character_name"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/character_image"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text=""
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/baseline_doorbell_241" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/character_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+
+            android:layout_marginEnd="4dp"
+            android:drawableStart="@drawable/baseline_doorbell_24"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/status_status"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/character_name"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_edittext_background"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/status"
+            android:textColor="#213AE0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gender_status"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/search_edittext_background"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/gender"
+            android:textColor="#DB0D3E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/none"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status_status"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/baseline_doorbell_242"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text=""
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/humam"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender_status"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="4dp"
+            android:drawableStart="@drawable/baseline_doorbell_243"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/human"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/type_status"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/none"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_edittext_background"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/type"
+            android:textColor="#A40DDB"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Species_status"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/humam"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/search_edittext_background"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/species"
+            android:textColor="#0DDB28"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fevorites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Species_status"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/search_edittext_background"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/favorites"
+            android:textColor="#0DDB28"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
